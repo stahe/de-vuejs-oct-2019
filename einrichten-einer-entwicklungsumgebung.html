@@ -1,0 +1,1157 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Einführung in das Vue.js-Framework anhand von Beispielen">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/de-vuejs-oct-2019/einrichten-einer-entwicklungsumgebung.html">
+      
+      
+        <link rel="prev" href="einfuhrung-in-das-vuejs-framework.html">
+      
+      
+        <link rel="next" href="projekt-vuejs-01-die-grundlagen.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>2. Einrichten einer Entwicklungsumgebung - Einführung in das Vue.js-Framework anhand von Beispielen</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Einführung in das Vue.js-Framework anhand von Beispielen";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2-einrichten-einer-entwicklungsumgebung" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Einführung in das Vue.js-Framework anhand von Beispielen" class="md-header__button md-logo" aria-label="Einführung in das Vue.js-Framework anhand von Beispielen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Einführung in das Vue.js-Framework anhand von Beispielen
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2. Einrichten einer Entwicklungsumgebung
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Zum Dunkelmodus wechseln"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Zum Dunkelmodus wechseln" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Zum hellen Modus wechseln"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Zum hellen Modus wechseln" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/de-vuejs-oct-2019" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Einführung in das Vue.js-Framework anhand von Beispielen" class="md-nav__button md-logo" aria-label="Einführung in das Vue.js-Framework anhand von Beispielen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Einführung in das Vue.js-Framework anhand von Beispielen
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/de-vuejs-oct-2019" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Willkommen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="einfuhrung-in-das-vuejs-framework.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Einführung in das VUE.JS-Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="einrichten-einer-entwicklungsumgebung.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Einrichten einer Entwicklungsumgebung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-01-die-grundlagen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Projekt [vuejs-01]: Die Grundlagen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-02-verwendung-des-bootstrap-css-frameworks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Projekt [vuejs-02]: Verwendung des Bootstrap-CSS-Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-03-ereignisbehandlung.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Projekt [vuejs-03]: Ereignisbehandlung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-04-direktiven-v-model-v-bind-berechnete-eigenschaften-eingabeformular.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Projekt [vuejs-04]: Direktiven [v-model, v-bind], berechnete Eigenschaften, Eingabeformular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vuejs-05-projekt-v-for-direktive.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. [vuejs-05]-Projekt: [v-for]-Direktive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-06-anlegen-einer-ansicht-mit-slots.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Projekt [vuejs-06]: Anlegen einer Ansicht mit Slots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-07-ereignisausbreitung-in-der-komponentenhierarchie.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Projekt [vuejs-07]: Ereignisausbreitung in der Komponentenhierarchie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-08-von-der-komponentenhierarchie-unabhangige-ereignisse-lebenszyklus-der-komponente.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Projekt [vuejs-08]: Von der Komponentenhierarchie unabhängige Ereignisse, Lebenszyklus der Komponente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-09-verwendung-eines-eventbus-plugins.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Projekt [vuejs-09]: Verwendung eines [eventBus]-Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-10-dao-plugin-asynchrone-http-anfragen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Projekt [vuejs-10]: [dao]-Plugin, asynchrone HTTP-Anfragen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vuejs-11-projekt-routing-und-navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. [vuejs-11]-Projekt: Routing und Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-12-verwaltung-von-html-tabellen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Projekt [vuejs-12]: Verwaltung von HTML-Tabellen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-13-aktualisieren-einer-komponente-mithilfe-einer-sitzung.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. Projekt [vuejs-13]: Aktualisieren einer Komponente mithilfe einer Sitzung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-14-die-sitzung-reaktiv-machen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Projekt [vuejs-14]: Die Sitzung reaktiv machen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekt-vuejs-15-verwendung-des-vuex-plugins.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17. Projekt [vuejs-15]: Verwendung des [Vuex]-Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vuejs-client-des-steuerberechnungsservers.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18. Vue.js-Client des Steuerberechnungsservers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="verbesserungen-am-vuejs-client.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19. Verbesserungen am Vue.js-Client
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bereitstellung-der-clientserver-anwendung-auf-einem-hosting-dienst.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20. Bereitstellung der Client/Server-Anwendung auf einem Hosting-Dienst
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a id="refheadingtoc225454640539168"></a></p>
+<h1 id="2-einrichten-einer-entwicklungsumgebung">2. <span style="color: #365f91">Einrichten einer Entwicklungsumgebung</span></h1>
+<p>Wir verwenden die in Dokument [2] beschriebene Entwicklungsumgebung:</p>
+<ul>
+  <li>Visual Studio Code (VSCode) zum Schreiben von JavaScript-Code;
+  </li>
+  <li><b>[node.js] </b>zum Ausführen des Codes;
+  </li>
+  <li><b>[npm] </b>zum Herunterladen und Installieren der benötigten JavaScript-Bibliotheken;
+  </li>
+</ul>
+
+<p>Wir richten eine Arbeitsumgebung in <strong>[VSCode]</strong> ein:</p>
+<p><img src="images/10000000000007180000016F1B193B93.png" width="636" height="128" style="width:16.82cm;height:3.399cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007180000016F1B193B93.png" /></p>
+<ul>
+  <li>In <b>[1-5] </b>öffnen wir einen leeren <b>[vuejs]</b>-Ordner in <b>[VSCode]</b>;
+  </li>
+</ul>
+
+<p><img src="images/10000000000007C30000010B752D2E42.png" width="636" height="85" style="width:16.82cm;height:2.26cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007C30000010B752D2E42.png" /></p>
+<ul>
+  <li>In <b>[8-10] </b>installieren wir die Abhängigkeit<b> [@vue/cli]</b>, mit der wir ein <b>[Vue.js]</b>-Projekt initialisieren können. Diese Abhängigkeit umfasst eine große Anzahl von Paketen (mehrere Hundert);
+  </li>
+</ul>
+
+<p>Im selben Terminal geben wir dann den Befehl <strong>[vue create .]</strong> ein<strong>,</strong> wodurch ein <strong>[Vue.js]</strong>-Projekt im aktuellen Verzeichnis (.) erstellt wird:</p>
+<p><img src="images/100000000000076500000133CEB6CD5E.png" width="636" height="103" style="width:16.82cm;height:2.729cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000076500000133CEB6CD5E.png" /></p>
+<ul>
+  <li>In <b>[13] </b>beginnt eine Reihe von Fragen zur Konfiguration des Projekts;
+  </li>
+</ul>
+
+<p><img src="images/10000000000001C7000001FE8A3A4F63.png" width="159" height="178" style="width:4.21cm;height:4.718cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C7000001FE8A3A4F63.png" /></p>
+<ul>
+  <li>Sobald alle Fragen beantwortet sind, werden neue Pakete heruntergeladen und ein Projekt im aktuellen Verzeichnis erstellt <b>[14]</b>.
+  </li>
+</ul>
+
+<p>Schauen wir uns einmal an, was generiert wurde. Die Datei <strong>[package.json]</strong> sieht wie folgt aus:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-vbscript">
+<span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;name&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;vuejs&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;version&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;0.1.0&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;private&quot;</span><span style="color:#000000">: </span><span style="color:#0000ff">true</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;scripts&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;serve&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;vue-cli-service serve vuejs-20/main.js&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;build&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;vue-cli-service build vuejs-20/main.js&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;lint&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;vue-cli-service lint&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  },</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;dependencies&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;axios&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^0.19.0&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;bootstrap&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^4.3.1&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;bootstrap-vue&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^2.0.2&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;core-js&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^2.6.5&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;vue&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^2.6.10&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;vue-router&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^3.1.3&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;vuex&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^3.1.1&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  },</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;devDependencies&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;@vue/cli-plugin-babel&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^3.11.0&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;@vue/cli-plugin-eslint&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^3.11.0&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;@vue/cli-service&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^3.11.0&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;babel-eslint&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^10.0.1&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;eslint&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^5.16.0&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;eslint-plugin-vue&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^5.0.0&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;vue-template-compiler&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;^2.6.10&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  },</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;eslintConfig&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;root&quot;</span><span style="color:#000000">: </span><span style="color:#0000ff">true</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;env&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#2e75b6">&quot;node&quot;</span><span style="color:#000000">: </span><span style="color:#0000ff">true</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    },</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;extends&quot;</span><span style="color:#000000">: [</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;plugin:vue/essential&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;eslint:recommended&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;rules&quot;</span><span style="color:#000000">: {},</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;parserOptions&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#2e75b6">&quot;parser&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;babel-eslint&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  },</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;postcss&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;plugins&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#2e75b6">&quot;autoprefixer&quot;</span><span style="color:#000000">: {}</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  },</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;browserslist&quot;</span><span style="color:#000000">: [</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#a31515">&quot;&gt; 1%&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#a31515">&quot;last 2 versions&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  ]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+</code></pre></div>
+
+<p><strong>Kommentare</strong></p>
+<ul>
+  <li>Zeilen 14–22: Unter den für die Entwicklung erforderlichen Abhängigkeiten finden sich Verweise auf die beiden Tools <b>[eslint, babel]</b>, die bereits in den beiden vorangegangenen Kapiteln verwendet wurden. Hinzu kommen Plugins für diese beiden Tools, die für die Verwendung innerhalb von <b>[vue.js] </b>vorgesehen sind;
+  </li>
+  <li>Zeile 34: Das Paket<b> [babel-eslint] </b>übernimmt die Transpilation des JavaScript-Codes von ES6 nach ES5;
+  </li>
+  <li>Zeilen 5–9: Es wurden drei <b>[npm]</b>-Aufgaben erstellt:
+    <ul>
+      <li><b>[build]</b>: dient zum Erstellen der kompilierten Version des Projekts, die für die Produktion bereit ist;
+      </li>
+      <li><b>[serve]</b>: führt das Projekt auf einem Webserver aus. Dieses Tool wird verwendet, um während der Entwicklung Tests durchzuführen. Wie bei <b>[webpack-dev-server] </b>löst eine Änderung des Quellcodes des Projekts automatisch die Neukompilierung und das Neuladen des Projekts durch den Webserver aus;
+      </li>
+      <li><b>[lint]</b>: dient zur Analyse von JavaScript-Code und zur Erstellung von Berichten. Dieses Tool werden wir hier nicht verwenden;
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Es wurde eine <strong>[README.md]</strong>-Datei mit folgendem Inhalt generiert:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-markdown">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000"># vuejs</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">## Project setup</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">```</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">npm install</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">```</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">### Compiles and hot-reloads for development</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">```</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">npm run serve</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">```</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">### Compiles and minifies for production</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">```</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">npm run build</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">```</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">### Run your tests</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">```</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">npm run test</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">```</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">### Lints and fixes files</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">```</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">npm run lint</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">```</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">### Customize configuration</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">See </span><span style="color:#a31515">[Configuration Reference]</span><span style="color:#000000">(https://cli.vuejs.org/config/).</span></span></span>
+</code></pre></div>
+
+<p>Diese Datei fasst die Befehle zusammen, die zur Verwaltung des Projekts verwendet werden.</p>
+<p>Wir wissen, dass in <strong>[VSCode] [npm]</strong>-Aufgaben zur Ausführung verfügbar sind:</p>
+<p><img src="images/10000000000006FF000001C5AB06CAC3.png" width="636" height="161" style="width:16.82cm;height:4.255cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000006FF000001C5AB06CAC3.png" /></p>
+<ul>
+  <li>In <b>[1-3] </b>führen wir den Befehl<b> [serve] </b>aus, der das Projekt kompiliert und anschließend ausführt <b>[4-5]</b>;
+  </li>
+</ul>
+
+<p>Unter der URL <strong>[http://localhost:8080]</strong> wird die folgende Seite angezeigt:</p>
+<p><img src="images/10000000000005C60000049A83E55A37.png" width="370" height="295" style="width:9.783cm;height:7.796cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005C60000049A83E55A37.png" /></p>
+<p>Wir werden etwas später erklären, wie es zu dieser Seite gekommen ist.</p>
+<p>Fahren wir mit der Einrichtung unserer Arbeitsumgebung fort:</p>
+<p><img src="images/10000000000007930000036A2200C029.png" width="582" height="262" style="width:15.392cm;height:6.937cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007930000036A2200C029.png" /></p>
+<ul>
+  <li>In <b>[2] </b>oben sehen wir <b>[git]</b>-Symbole. <b>[git] </b>ist ein Versionskontrollsystem für Quellcode, mit dem Sie aufeinanderfolgende Versionen des Codes verwalten und unter Entwicklern austauschen können. Wir werden dieses Tool für das Projekt deaktivieren;
+  </li>
+  <li>In <b>[3-5] </b>rufen wir die Projekteigenschaften auf;
+  </li>
+</ul>
+
+<p><img src="images/100000000000042B000002D0FFC38A47.png" width="320" height="216" style="width:8.47cm;height:5.715cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000042B000002D0FFC38A47.png" /></p>
+<ul>
+  <li>In <b>[9-10] </b>deaktivieren wir die Verwendung von <b>[git] </b>im Projekt;
+  </li>
+</ul>
+
+<p>Wir werden verschiedene Tests schreiben, um zu demonstrieren, wie <strong>[vue.js]</strong> funktioniert. Wir möchten jedoch nicht jedes Mal ein neues Projekt erstellen, da dies jedes Mal die Generierung eines <strong>[node_modules]</strong>-Ordners erfordern würde, und dieser Ordner mehrere hundert Megabyte groß ist. Schauen wir uns noch einmal die <strong>[npm]</strong>-Aufgaben in der Datei <strong>[package.json]</strong> an:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;scripts&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;serve&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;vue-cli-service serve vuejs-00/main.js&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;build&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;vue-cli-service build vuejs-00/main.js&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;lint&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;vue-cli-service lint&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  },</span></span>
+</code></pre></div>
+
+<ul>
+  <li>Zeile 2: Der Befehl<b> [serve] </b>verwendet standardmäßig:
+    <ul>
+      <li>die Datei <b>[public/index.html]</b>;
+      </li>
+      <li>die mit der Datei <b>[src/main.js] </b>verknüpft ist;
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>In Zeile 2 können Sie den Einstiegspunkt des Projekts für den Befehl <strong>[serve]</strong> angeben, zum Beispiel:</p>
+<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#2e75b6">&quot;serve&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;vue-cli-service serve vuejs-00/main.js&quot;</span><span style="color:#000000">,</span></span></span>
+</code></pre></div>
+
+<p>Probieren wir es aus:</p>
+<p><img src="images/10000000000007DE00000279D843579C.png" width="636" height="200" style="width:16.82cm;height:5.286cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007DE00000279D843579C.png" /></p>
+<ul>
+  <li>In <b>[1] </b>wurde der Ordner<b> [src] </b>in <b>[vuejs-00] </b>umbenannt;
+  </li>
+  <li>In <b>[2-3] </b>wurde der Befehl<b> [serve] </b>geändert;
+  </li>
+  <li>In <b>[4-6] </b>führen wir das Projekt aus;
+  </li>
+</ul>
+
+<p>Wir erhalten das gleiche Ergebnis wie zuvor:</p>
+<p><img src="images/10000000000004FB00000392CB7FEF0D.png" width="319" height="228" style="width:8.43cm;height:6.043cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000004FB00000392CB7FEF0D.png" /></p>
+<p>Für unsere Tests gehen wir wie folgt vor:</p>
+<ul>
+  <li>Wir schreiben Code in einen Ordner<b> [vuejs-xx] </b>innerhalb des Projekts;
+  </li>
+  <li>Testen dieses Projekts mit dem Befehl <b>[vue-cli-service serve vuejs-xx/main.js] </b>in der Datei<b> [package.json]</b>;
+  </li>
+</ul>
+
+<p>Wenn der Entwicklungsserver läuft, löst jede Änderung an einer der Projektdateien eine Neukompilierung aus. Aus diesem Grund deaktivieren wir den Modus <strong>[Auto Save]</strong> in <strong>[VSCode]</strong>. Schließlich möchten wir nicht, dass jedes Mal eine Neukompilierung erfolgt, wenn wir Zeichen in eine der Projektdateien eingeben. Eine Neukompilierung soll nur zu bestimmten Zeitpunkten erfolgen:</p>
+<p><img src="images/100000000000022B000002F6F4291A79.png" width="166" height="227" style="width:4.399cm;height:6.008cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000022B000002F6F4291A79.png" /></p>
+<ul>
+  <li>In <b>[2] </b>darf die Option<b> [Auto Save] </b>nicht aktiviert sein;
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        Dieses Tutorial, verfasst von <strong>Serge Tahé</strong>, wird der Öffentlichkeit unter den Bedingungen der
+<em>Creative Commons Namensnennung – Nicht kommerziell –
+Namensnennung – Nicht kommerziell –
+Weitergabe unter gleichen Bedingungen 3.0 Unported</em>.
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
