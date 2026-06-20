@@ -12,13 +12,13 @@
         <meta name="author" content="Serge Tahé">
       
       
-        <link rel="canonical" href="https://stahe.github.io/de-vuejs-oct-2019/projekt-vuejs-04-direktiven-v-model-v-bind-berechnete-eigenschaften-eingabeformular.html">
+        <link rel="canonical" href="https://stahe.github.io/de-vuejs-oct-2019/projekt-vuejs-04-richtlinien-v-model-v-bind-berechnete-attribute-eingabeformular.html">
       
       
-        <link rel="prev" href="projekt-vuejs-03-ereignisbehandlung.html">
+        <link rel="prev" href="projekt-vuejs-03-ereignisverwaltung.html">
       
       
-        <link rel="next" href="vuejs-05-projekt-v-for-direktive.html">
+        <link rel="next" href="projekt-vuejs-05-anweisung-v-for.html">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>6. Projekt [vuejs-04]: Direktiven [v-model, v-bind], berechnete Eigenschaften, Eingabeformular - Einführung in das Vue.js-Framework anhand von Beispielen</title>
+        <title>6. Projekt [vuejs-04]: Richtlinien [v-model, v-bind], berechnete Attribute, Eingabeformular - Einführung in das Vue.js-Framework anhand von Beispielen</title>
       
     
     
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#6-projekt-vuejs-04-direktiven-v-model-v-bind-berechnete-eigenschaften-eingabeformular" class="md-skip">
+        <a href="#6-projekt-vuejs-04-richtlinien-v-model-v-bind-berechnete-attribute-eingabeformular" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              6. Projekt [vuejs-04]: Direktiven [v-model, v-bind], berechnete Eigenschaften, Eingabeformular
+              6. Projekt [vuejs-04]: Richtlinien [v-model, v-bind], berechnete Attribute, Eingabeformular
             
           </span>
         </div>
@@ -305,14 +305,14 @@
   
   
     <li class="md-nav__item">
-      <a href="einfuhrung-in-das-vuejs-framework.html" class="md-nav__link">
+      <a href="einfuhrung-in-das-framework-vuejs.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    1. Einführung in das VUE.JS-Framework
+    1. Einführung in das Framework VUE.JS
   
 
     
@@ -332,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="einrichten-einer-entwicklungsumgebung.html" class="md-nav__link">
+      <a href="einrichtung-einer-arbeitsumgebung.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Einrichten einer Entwicklungsumgebung
+    2. Einrichtung einer Arbeitsumgebung
   
 
     
@@ -386,14 +386,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projekt-vuejs-02-verwendung-des-bootstrap-css-frameworks.html" class="md-nav__link">
+      <a href="projekt-vuejs-02-verwendung-des-bootstrap-frameworks-css.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. Projekt [vuejs-02]: Verwendung des Bootstrap-CSS-Frameworks
+    4. Projekt [vuejs-02]: Verwendung des Bootstrap-Frameworks CSS
   
 
     
@@ -413,14 +413,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projekt-vuejs-03-ereignisbehandlung.html" class="md-nav__link">
+      <a href="projekt-vuejs-03-ereignisverwaltung.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Projekt [vuejs-03]: Ereignisbehandlung
+    5. Projekt [vuejs-03]: Ereignisverwaltung
   
 
     
@@ -456,7 +456,7 @@
   <span class="md-ellipsis">
     
   
-    6. Projekt [vuejs-04]: Direktiven [v-model, v-bind], berechnete Eigenschaften, Eingabeformular
+    6. Projekt [vuejs-04]: Richtlinien [v-model, v-bind], berechnete Attribute, Eingabeformular
   
 
     
@@ -467,14 +467,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="projekt-vuejs-04-direktiven-v-model-v-bind-berechnete-eigenschaften-eingabeformular.html" class="md-nav__link md-nav__link--active">
+      <a href="projekt-vuejs-04-richtlinien-v-model-v-bind-berechnete-attribute-eingabeformular.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Projekt [vuejs-04]: Direktiven [v-model, v-bind], berechnete Eigenschaften, Eingabeformular
+    6. Projekt [vuejs-04]: Richtlinien [v-model, v-bind], berechnete Attribute, Eingabeformular
   
 
     
@@ -522,10 +522,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#63-die-form-komponente" class="md-nav__link">
+  <a href="#63-die-komponente-form" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.3. Die [Form]-Komponente
+        6.3. Die Komponente [Form]
       
     </span>
   </a>
@@ -533,10 +533,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#64-ausfuhren-des-projekts" class="md-nav__link">
+  <a href="#64-ausfuhrung-des-projekts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.4. Ausführen des Projekts
+        6.4. Ausführung des Projekts
       
     </span>
   </a>
@@ -558,14 +558,14 @@
   
   
     <li class="md-nav__item">
-      <a href="vuejs-05-projekt-v-for-direktive.html" class="md-nav__link">
+      <a href="projekt-vuejs-05-anweisung-v-for.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7. [vuejs-05]-Projekt: [v-for]-Direktive
+    7. Projekt [vuejs-05]: Anweisung [v-for]
   
 
     
@@ -585,14 +585,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projekt-vuejs-06-anlegen-einer-ansicht-mit-slots.html" class="md-nav__link">
+      <a href="projekt-vuejs-06-layout-einer-ansicht-mit-slots.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    8. Projekt [vuejs-06]: Anlegen einer Ansicht mit Slots
+    8. Projekt [vuejs-06]: Layout einer Ansicht mit Slots
   
 
     
@@ -612,14 +612,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projekt-vuejs-07-ereignisausbreitung-in-der-komponentenhierarchie.html" class="md-nav__link">
+      <a href="projekt-vuejs-07-weiterleitung-von-ereignissen-in-der-komponentenhierarchie.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. Projekt [vuejs-07]: Ereignisausbreitung in der Komponentenhierarchie
+    9. Projekt [vuejs-07]: Weiterleitung von Ereignissen in der Komponentenhierarchie
   
 
     
@@ -639,14 +639,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projekt-vuejs-08-von-der-komponentenhierarchie-unabhangige-ereignisse-lebenszyklus-der-komponente.html" class="md-nav__link">
+      <a href="projekt-vuejs-08-ereignisse-unabhangig-von-der-komponentenhierarchie-lebenszyklus-der-komponenten.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. Projekt [vuejs-08]: Von der Komponentenhierarchie unabhängige Ereignisse, Lebenszyklus der Komponente
+    10. Projekt [vuejs-08]: Ereignisse unabhängig von der Komponentenhierarchie, Lebenszyklus der Komponenten
   
 
     
@@ -666,14 +666,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projekt-vuejs-09-verwendung-eines-eventbus-plugins.html" class="md-nav__link">
+      <a href="projekt-vuejs-09-verwendung-eines-plugins-eventbus.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    11. Projekt [vuejs-09]: Verwendung eines [eventBus]-Plugins
+    11. Projekt [vuejs-09]: Verwendung eines Plugins [eventBus]
   
 
     
@@ -693,14 +693,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projekt-vuejs-10-dao-plugin-asynchrone-http-anfragen.html" class="md-nav__link">
+      <a href="projekt-vuejs-10-plugin-dao-asynchrone-abfragen-http.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    12. Projekt [vuejs-10]: [dao]-Plugin, asynchrone HTTP-Anfragen
+    12. Projekt [vuejs-10]: Plugin [dao], asynchrone Abfragen HTTP
   
 
     
@@ -720,14 +720,14 @@
   
   
     <li class="md-nav__item">
-      <a href="vuejs-11-projekt-routing-und-navigation.html" class="md-nav__link">
+      <a href="projekt-vuejs-11-routing-und-navigation.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    13. [vuejs-11]-Projekt: Routing und Navigation
+    13. Projekt [vuejs-11]: Routing und Navigation
   
 
     
@@ -747,14 +747,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projekt-vuejs-12-verwaltung-von-html-tabellen.html" class="md-nav__link">
+      <a href="projekt-vuejs-12-verwaltung-der-tabellen-html.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    14. Projekt [vuejs-12]: Verwaltung von HTML-Tabellen
+    14. Projekt [vuejs-12]: Verwaltung der Tabellen HTML
   
 
     
@@ -774,14 +774,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projekt-vuejs-13-aktualisieren-einer-komponente-mithilfe-einer-sitzung.html" class="md-nav__link">
+      <a href="projekt-vuejs-13-aktualisierung-einer-komponente-verwendung-einer-sitzung.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    15. Projekt [vuejs-13]: Aktualisieren einer Komponente mithilfe einer Sitzung
+    15. Projekt [vuejs-13]: Aktualisierung einer Komponente, Verwendung einer Sitzung
   
 
     
@@ -828,14 +828,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projekt-vuejs-15-verwendung-des-vuex-plugins.html" class="md-nav__link">
+      <a href="projekt-vuejs-15-verwendung-des-plugins-vuex.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    17. Projekt [vuejs-15]: Verwendung des [Vuex]-Plugins
+    17. Projekt [vuejs-15]: Verwendung des Plugins [Vuex]
   
 
     
@@ -855,14 +855,14 @@
   
   
     <li class="md-nav__item">
-      <a href="vuejs-client-des-steuerberechnungsservers.html" class="md-nav__link">
+      <a href="client-vuejs-des-steuerberechnungsservers.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    18. Vue.js-Client des Steuerberechnungsservers
+    18. Client Vue.js des Steuerberechnungsservers
   
 
     
@@ -882,14 +882,14 @@
   
   
     <li class="md-nav__item">
-      <a href="verbesserungen-am-vuejs-client.html" class="md-nav__link">
+      <a href="verbesserungen-am-client-vuejs.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    19. Verbesserungen am Vue.js-Client
+    19. Verbesserungen am Client Vue.js
   
 
     
@@ -909,14 +909,14 @@
   
   
     <li class="md-nav__item">
-      <a href="bereitstellung-der-clientserver-anwendung-auf-einem-hosting-dienst.html" class="md-nav__link">
+      <a href="bereitstellung-der-client-server-anwendung-auf-einem-hosting-dienst.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    20. Bereitstellung der Client/Server-Anwendung auf einem Hosting-Dienst
+    20. Bereitstellung der Client-Server-Anwendung auf einem Hosting-Dienst
   
 
     
@@ -946,21 +946,21 @@
 
 
 
-<p><a id="refheadingtoc2479732728496130"></a></p>
-<h1 id="6-projekt-vuejs-04-direktiven-v-model-v-bind-berechnete-eigenschaften-eingabeformular">6. <span style="color: #365f91"><strong>Projekt</strong> [vuejs-04]<strong>: Direktiven</strong> [v-model, v-bind]<strong>, berechnete Eigenschaften, Eingabeformular</strong></span></h1>
-<p>Die Verzeichnisstruktur des Projekts <strong>[vuejs-04]</strong> sieht wie folgt aus:</p>
-<p><img src="images/100000000000011F000001009A483751.png" width="101" height="90" style="width:2.662cm;height:2.374cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000011F000001009A483751.png" /></p>
-<p><a id="refheadingtoc2479752728496130"></a></p>
+<p><span id="refheadingtoc2479732728496130" name="refheadingtoc2479732728496130" class="odt-bookmark-anchor"></span></p>
+<h1 id="6-projekt-vuejs-04-richtlinien-v-model-v-bind-berechnete-attribute-eingabeformular">6. <span style="color: #365f91"><strong>Projekt</strong> [vuejs-04]<strong>: Richtlinien</strong> [v-model, v-bind]<strong>, berechnete Attribute, Eingabeformular</strong></span></h1>
+<p>Die Projektstruktur von <strong>[vuejs-04]</strong> sieht wie folgt aus:</p>
+<p><img src="images/100000000000011F000001009A483751.png" width="101" height="90" style="width:2.662cm;height:2.371cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000011F000001009A483751.png" /></p>
+<p><span id="refheadingtoc2479752728496130" name="refheadingtoc2479752728496130" class="odt-bookmark-anchor"></span></p>
 <h2 id="61-das-hauptskript-mainjs">6.1. <span style="color: #4f81bd"><strong>Das Hauptskript</strong> [main.js]</span></h2>
 <p>Es ist dasselbe wie im vorherigen Beispiel.</p>
-<p><a id="refheadingtoc2479772728496130"></a></p>
+<p><span id="refheadingtoc2479772728496130" name="refheadingtoc2479772728496130" class="odt-bookmark-anchor"></span></p>
 <h2 id="62-die-hauptkomponente-app">6.2. <span style="color: #4f81bd"><strong>Die Hauptkomponente</strong> [App]</span></h2>
-<p>Der Code für <strong>[App.vue]</strong> lautet wie folgt:</p>
+<p>Der Code von <strong>[App.vue]</strong> lautet wie folgt:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#800000">template</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">b-container</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">b-card</span><span style="color:#0000ff">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">&lt;!-- message de présentation --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">&lt;!-- Einführungsmeldung --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">b-row</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">b-col</span><span style="color:#000000"> </span><span style="color:#ff0000">cols</span><span style="color:#0000ff">=&quot;8&quot;&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">          </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">b-alert</span><span style="color:#000000"> </span><span style="color:#ff0000">show</span><span style="color:#000000"> </span><span style="color:#ff0000">variant</span><span style="color:#0000ff">=&quot;success&quot;</span><span style="color:#000000"> </span><span style="color:#ff0000">align</span><span style="color:#0000ff">=&quot;center&quot;&gt;</span></span></span>
@@ -972,11 +972,11 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">b-card</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">b-container</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#800000">template</span><span style="color:#0000ff">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#800000">script</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">import</span><span style="color:#000000"> Form </span><span style="color:#0000ff">from</span><span style="color:#000000"> </span><span style="color:#a31515">&quot;./components/Form.vue&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">export</span><span style="color:#000000"> </span><span style="color:#0000ff">default</span><span style="color:#000000"> {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    name: </span><span style="color:#a31515">&quot;app&quot;</span><span style="color:#000000">,</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    components: {</span></span>
@@ -987,15 +987,15 @@
 </code></pre></div>
 
 <p>Die Komponente <strong>[App.vue]</strong> verwendet die neue Komponente <strong>[Form]</strong> (Zeilen 12, 19, 24).</p>
-<p><a id="refheadingtoc2479792728496130"></a></p>
-<h2 id="63-die-form-komponente">6.3. <span style="color: #4f81bd"><strong>Die</strong> [Form]<strong>-Komponente</strong></span></h2>
-<p>Der Code für die <strong>[Form]</strong>-Komponente lautet wie folgt:</p>
+<p><span id="refheadingtoc2479792728496130" name="refheadingtoc2479792728496130" class="odt-bookmark-anchor"></span></p>
+<h2 id="63-die-komponente-form">6.3. <span style="color: #4f81bd"><strong>Die Komponente</strong> [Form]</span></h2>
+<p>Der Code der Komponente <strong>[Form]</strong> lautet wie folgt:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#800000">template</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">div</span><span style="color:#0000ff">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- form --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- Formular --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">b-form</span><span style="color:#0000ff">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">&lt;!-- form elements --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">&lt;!-- Formularelemente --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">b-row</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">b-col</span><span style="color:#000000"> </span><span style="color:#ff0000">cols</span><span style="color:#0000ff">=&quot;4&quot;&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">          </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">b-card</span><span style="color:#000000"> </span><span style="color:#ff0000">bg-variant</span><span style="color:#0000ff">=&quot;light&quot;&gt;</span></span></span>
@@ -1007,7 +1007,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">                       </span><span style="color:#ff0000">v-bind:state</span><span style="color:#0000ff">=&quot;enfantsValide&quot;</span><span style="color:#000000"> </span><span style="color:#0000ff">/&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">              </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">b-form-invalid-feedback</span><span style="color:#000000"> </span><span style="color:#ff0000">:state</span><span style="color:#0000ff">=&quot;enfantsValide&quot;&gt;</span><span style="color:#000000">Vous devez saisir un nombre positif ou nul</span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">b-form-invalid-feedback</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">b-form-group</span><span style="color:#0000ff">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">&lt;!-- button --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">&lt;!-- Schaltfläche --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#0000ff">&lt;</span><span style="color:#800000">b-button</span><span style="color:#000000"> </span><span style="color:#ff0000">variant</span><span style="color:#0000ff">=&quot;primary&quot;</span><span style="color:#000000"> </span><span style="color:#ff0000">:disabled</span><span style="color:#0000ff">=&quot;formInvalide&quot; </span><span style="color:#ff0000">@click</span><span style="color:#0000ff">=&quot;doSomething&quot;&gt;</span><span style="color:#000000">Valider</span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">b-button</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">          </span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">b-card</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">b-col</span><span style="color:#0000ff">&gt;</span></span></span>
@@ -1022,35 +1022,35 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">b-row</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">div</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#800000">template</span><span style="color:#0000ff">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">&lt;!-- script --&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;!-- Skript --&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#800000">script</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">export</span><span style="color:#000000"> </span><span style="color:#0000ff">default</span><span style="color:#000000"> {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// nom</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Name</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    name: </span><span style="color:#a31515">&quot;Form&quot;</span><span style="color:#000000">,</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// attributs statiques du composant</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// statische Attribute der Komponente</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    data() {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">return</span><span style="color:#000000"> {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// nbre d&#x27;enfants</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// Anzahl der untergeordneten Elemente</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        enfants: </span><span style="color:#a31515">&quot;&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      };</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    },</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// attributs calculés</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// berechnete Attribute</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    computed: {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// attribut [formInvalide]</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// Attribut [formInvalide]</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      formInvalide() {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#0000ff">return</span><span style="color:#000000"> !</span><span style="color:#0000ff">this</span><span style="color:#000000">.enfantsValide;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      },</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// attribut [enfantsInvalide]</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// Attribut [enfantsInvalide]</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      enfantsValide() {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#0000ff">return</span><span style="color:#000000"> Boolean(</span><span style="color:#0000ff">this</span><span style="color:#000000">.enfants.match(</span><span style="color:#a31515">/^\s*\d+\s*$/</span><span style="color:#000000">));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    },</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// méthodes</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Methoden</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    methods: {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      doSomething() {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// le nbre d&#x27;enfants est connu lorsque la validation a lieu</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// Die Anzahl der Kinder ist zum Zeitpunkt der Validierung bekannt</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        alert(</span><span style="color:#a31515">&quot;Nombre d&#x27;enfants : &quot;</span><span style="color:#000000"> + </span><span style="color:#0000ff">this</span><span style="color:#000000">.enfants);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
@@ -1058,81 +1058,82 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#800000">script</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
-<p><strong>Visuelle Ausgabe</strong></p>
-<p><img src="images/1000000000000610000003F865A73DB8.png" width="388" height="254" style="width:10.269cm;height:6.722cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000610000003F865A73DB8.png" /></p>
-<p><img src="images/100000000000080C0000037C7B1E4A86.png" width="515" height="223" style="width:13.63cm;height:5.902cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000080C0000037C7B1E4A86.png" /></p>
-<p><strong>Kommentare</strong></p>
+<p><strong>Visuelle Darstellung</strong></p>
+<p><img src="images/1000000000000610000003F865A73DB8.png" width="388" height="254" style="width:10.269cm;height:6.72cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000610000003F865A73DB8.png" /></p>
+<p><img src="images/100000000000080C0000037C7B1E4A86.png" width="515" height="223" style="width:13.63cm;height:5.9cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000080C0000037C7B1E4A86.png" /></p>
+<p><strong>Anmerkungen</strong></p>
 <ul>
-  <li>Zeilen 4–32: Das &lt;b-form&gt;-Tag definiert ein Bootstrap-Formular;
+  <li>Zeilen 4–32: Das Tag &lt;b-form&gt; fügt ein Bootstrap-Formular ein;
   </li>
-  <li>Zeile 6: Das &lt;b-row&gt;-Tag definiert eine Zeile im Formular;
+  <li>Zeile 6: Das Tag &lt;b-row&gt; fügt eine Zeile in das Formular ein;
   </li>
-  <li>Zeile 7: Das &lt;b-col cols=’4’&gt;-Tag definiert eine Spalte, die sich über 4 Bootstrap-Spalten erstreckt;
+  <li>Zeile 7: Das Tag &lt;b-col cols=’4’&gt; definiert eine Spalte, die sich über 4 Bootstrap-Spalten erstreckt;
   </li>
-  <li>Zeile 8: Das &lt;b-card&gt;-Tag <b>[6] </b>definiert eine Bootstrap-Karte, einen durch einen Rahmen umrandeten Bereich;
+  <li>Zeile 8: Das Tag &lt;b-card&gt; <b>[6] </b>fügt eine Bootstrap-Karte ein, also einen durch einen Rahmen umrandeten Bereich;
   </li>
-  <li>Zeile 9: Das &lt;b-form-group&gt;-Tag fügt eine Gruppe miteinander verknüpfter Formularelemente hinzu. Hier wird eine Beschriftung (das <b>[label]</b>-Attribut) <b>[1] </b>mit einem Eingabefeld (das <b>[label-for]</b>-Attribut) verknüpft. Der Wert von <b>[label-for] </b>ist der Wert des <b>[id]</b>-Feldes (Zeile 12) des Eingabefeldes;
+  <li>Zeile 9: Das Tag &lt;b-form-group&gt; fügt eine Gruppe miteinander verknüpfter Formularelemente ein. Hier ist ein Text (Attribut <b>[label]</b>) <b>[1] </b>mit einem Eingabefeld (Attribut <b>[label-for]</b>) verknüpft. Der Wert von <b>[label-for] </b>ist der Wert des Feldes <b>[id]</b>, Zeile 12, des Eingabefelds;
   </li>
-  <li>Zeilen 10–14: Das &lt;b-input&gt;-Tag <b>[2] </b>führt ein Eingabefeld ein:
+  <li>Zeilen 10–14: Das &lt;b-input&gt;-Tag <b>[2] </b>definiert ein Eingabefeld:
     <ul>
-      <li>Zeile 10: <b>[type=&#x27;text&#x27;] </b>gibt an, dass Text in das Eingabefeld eingegeben werden kann. Wir hätten auch <b>[type=&#x27;number&#x27;] </b>mit den Einschränkungen <b>[min=&#x27;val1&#x27; max=&#x27;val2&#x27; step=&#x27;val3&#x27;] </b>schreiben können, da wir eine Reihe von untergeordneten Elementen erwarten. Wir haben <b>[type=&#x27;text&#x27;] </b>verwendet, um zu demonstrieren, wie eine Eingabe validiert wird;
+      <li>Zeile 10: <b>[type=’text’] </b>gibt an, dass in das Eingabefeld Text eingegeben werden kann. Man hätte <b>[type=’number’] </b>mit den Einschränkungen <b>[min=’val1’ max=’val2’ step=’val3’] </b>schreiben können, da eine bestimmte Anzahl von Nachfolgern erwartet wird. Wir haben <b>[type=’text’]</b> verwendet, um zu zeigen, wie die Gültigkeit einer Eingabe überprüft werden kann;
       </li>
-      <li>Zeile 12: Das Attribut<b> [placeholder] [3] </b>legt die Meldung fest, die im Eingabefeld angezeigt wird, bis der Benutzer etwas eingibt;
+      <li>Zeile 12: Das Attribut <b>[placeholder] [3] </b>legt die Meldung fest, die im Eingabefeld angezeigt wird, solange der Benutzer noch nichts eingegeben hat;
       </li>
-      <li>Zeile 13: Die <b>[v-model]</b>-Direktive bindet den eingegebenen Wert <b>bidirektional </b>an das <b>[children]</b>-Attribut (Zeile 42) der Komponente:
+      <li>Zeile 13: Die Anweisung <b>[v-model] </b>verknüpft den eingegebenen Wert <b>bidirektional </b>mit dem Attribut <b>[enfants] </b>(Zeile 42) der Komponente:
         <ul>
-          <li>Wenn sich der eingegebene Wert ändert, ändert sich auch der Wert des Attributs<b> [children]</b>;
+          <li>Wenn sich der eingegebene Wert ändert, ändert sich auch der Wert des Attributs <b>[enfants]</b>;
           </li>
-          <li>wenn sich der Wert des Attributs<b> [children] </b>ändert, ändert sich auch der eingegebene Wert, d. h., der Inhalt von <b>[2] </b>ändert sich;
+          <li>Wenn sich der Wert des Attributs <b>[enfants] </b>ändert, ändert sich auch der eingegebene Wert, d. h., der Inhalt von <b>[2] </b>ändert sich;
           </li>
-          <li>Wichtig zu verstehen ist, dass dank des oben beschriebenen Mechanismus das Attribut<b> [children] </b>in Zeile 42 den in <b>[2] </b>eingegebenen Wert annimmt, sobald der Benutzer auf die Schaltfläche<b> [Validate] [5] </b>klickt;
+          <li>Wichtig zu verstehen ist, dass dank des oben beschriebenen Mechanismus, wenn der Benutzer auf die Schaltfläche <b>[Valider] [5] </b>klickt, das Attribut <b>[enfants] </b>in Zeile 42 den in <b>[2]</b> eingegebenen Wert annimmt;
           </li>
         </ul>
       </li>
-      <li>Zeile 14: Die <b>[v-bind]</b>-Direktive stellt eine Bindung zwischen einem Attribut des &lt;b-input&gt;-Tags – in diesem Fall dem Attribut<b> [state] </b>– und einem Komponentenattribut – in diesem Fall <b>[enfantsValide] </b>in Zeile 53 – her. Das Attribut<b> [enfantsValide] </b>ist insofern einzigartig, als es sich um eine <b>Funktion</b> handelt, die den Wert des Attributs zurückgibt. Diese Art von Attribut wird als <b>berechnetes</b> Attribut bezeichnet. Berechnete Attribute finden sich in der Eigenschaft<b> [computed] </b>der Komponente in Zeile 47. Berechnete Attribute werden genauso verwendet wie statische Attribute der Eigenschaft<b> [data]</b>: In Zeile 14 schreiben wir nicht <b>[v-bind:state=’enfantsValide()’]</b>,<b> </b>sondern <b>[v-bind:state=’enfantsValide’]</b>, <b>ohne Klammern</b>. Daher ist es beim Lesen der <b>[template] </b>unmöglich, ein <b>berechnetes </b>Attribut von einem <b>statischen </b>Attribut zu unterscheiden. Dazu muss man den Skriptcode der Komponente untersuchen;
+      <li>Zeile 14: Die Anweisung <b>[v-bind] </b>stellt eine Verknüpfung her zwischen einerseits einem Attribut des Tags &lt;b-input&gt;, hier dem Attribut <b>[state]</b>, und andererseits einem Attribut der Komponente, hier <b>[enfantsValide]</b>, Zeile 53. Das Attribut <b>[enfantsValide] </b>ist insofern besonders, als es sich um eine <b>Funktion</b> handelt, die den Wert des Attributs zurückgibt. Diese Art von Attribut wird als <b>berechnetes</b> Attribut bezeichnet. Die berechneten Attribute finden sich in der Eigenschaft <b>[computed]</b>, Zeile 47, der Komponente. Berechnete Attribute werden genauso verwendet wie die statischen Attribute der Funktion <b>[data]</b>: In Zeile 14 schreibt man nicht <b>[v-bind:state=’enfantsValide()’]</b>, sondern <b>[v-bind:state=’enfantsValide’]</b>, <b>ohne Klammern</b>. Auch beim Lesen von <b>„[template]“ </b>lässt sich ein <b>berechnetes</b> Attribut nicht von einem <b>statischen</b> Attribut unterscheiden. Dazu muss man sich den Skriptcode der Komponente ansehen;
       </li>
-      <li>Zeile 14: Das Attribut<b> [state] </b>legt den Status „gültig“ oder „ungültig“ des eingegebenen Werts fest: Wenn <b>[enfantsValide] [true] </b>zurückgibt, gilt der eingegebene Wert als gültig; andernfalls gilt er als ungültig. Der Screenshot oben zeigt die Komponente<b> [b-input]</b>, wenn die Funktion<b> [enfantsValide] [false] </b>zurückgibt;
+      <li>Zeile 14: Das Attribut <b>[state] </b>legt den Status „gültig“ oder „ungültig“ des eingegebenen Werts fest: Wenn <b>[enfantsValide] </b>den Wert <b>[true]</b> zurückgibt, gilt der eingegebene Wert als gültig, andernfalls als ungültig. Der obige Screenshot zeigt die Komponente <b>[b-input], </b>wenn die Funktion <b>[enfantsValide] </b>den Wert <b>[false]</b> zurückgibt;
       </li>
-      <li>Zeile 15: Das &lt;b-form-invalid-feedback&gt;-Tag <b>[4] </b>zeigt eine Meldung an, wenn die Eingabe in <b>[2] </b>ungültig ist. Sein Attribut <b>[:state=&#x27;childrenValid&#x27;] </b>ist identisch mit dem Attribut <b>[v-bind:state=&#x27;childrenValid&#x27;] </b>in Zeile 14. Die <b>[v-bind]</b>-Direktive kann weggelassen werden, das <b>[:]</b>-Symbol muss jedoch beibehalten werden. Die Fehlermeldung wird daher angezeigt, wenn das Attribut<b> [childrenValid] </b>den Wert <b>[false] </b>hat;
+      <li>Zeile 15: Das Tag &lt;b-form-invalid-feedback&gt; <b>[4] </b>ermöglicht die Anzeige einer Meldung, wenn die Eingabe in <b>[2] </b>ungültig ist. Sein Attribut <b>[:state=’enfantsValide’] </b>ist identisch mit dem Attribut <b>[v-bind:state=’enfantsValide’] </b>in Zeile 14. Die Anweisung <b>[v-bind]</b> kann weggelassen werden, das Zeichen <b>[:]</b> muss jedoch beibehalten werden. Die Fehlermeldung wird daher angezeigt, wenn das Attribut <b>[enfantsValide] </b>den Wert <b>[false]</b> hat;
       </li>
-      <li>Zeile 16: Ende der &lt;b-group&gt;-Elementgruppe;
+      <li>Zeile 16: Ende der Elementgruppe &lt;b-group&gt;;
       </li>
-      <li>Zeile 18: die Schaltfläche<b> [5], </b>die die Eingabe validiert:
+      <li>Zeile 18: Die Schaltfläche <b>[5]</b>, mit der die Eingabe bestätigt wird:
         <ul>
-          <li>sie ist blau <b>[variant=&#x27;primary&#x27;]</b>;
+          <li>sie wird blau sein: <b>[variant=’primary’]</b>;
           </li>
-          <li><b>[:disabled=&quot;formInvalide&quot;]</b>: Das Attribut<b> [disabled] </b>aktiviert oder deaktiviert die Schaltfläche. Dieses Attribut ist (v-bind) an das berechnete Attribut <b>[formInvalide] </b>in Zeile 49 gebunden;
+          <li><b>[:disabled=&quot;formInvalide&quot;]</b>: Das Attribut <b>[disabled] </b>dient dazu, die Schaltfläche zu aktivieren bzw. zu deaktivieren. Dieses Attribut ist (v-bind) mit dem berechneten Attribut <b>[formInvalide] </b>aus Zeile 49 verknüpft;
           </li>
-          <li><b>[@click=&quot;doSomething&quot;]</b>: Wenn der Benutzer auf die Schaltfläche klickt, wird die Methode<b> [doSomething] </b>in Zeile 59 ausgeführt;
+          <li><b>[@click=&quot;doSomething&quot;]</b>: Wenn der Benutzer auf die Schaltfläche klickt, wird die Methode <b>[doSomething] </b>in Zeile 59 ausgeführt;
           </li>
         </ul>
       </li>
-      <li>Zeilen 19–22: Schließen der verschiedenen offenen Tags;
+      <li>Zeilen 19–22: Schließen der verschiedenen geöffneten Tags;
       </li>
-      <li>Zeilen 23–29: eine neue Zeile in der <b>[template]</b>. <b>[class=’mt-3’] </b>bedeutet <b>[Rand (m) oben (t) gleich 3 Spacer]</b>. <b>[spacer] </b>ist eine Bootstrap-Abstands-Einheit. Diese Klasse erzeugt den Abstand <b>[8] </b>im obigen Screenshot. Ohne diese Klasse liegt Bereich <b>[7] </b>bündig mit den Bereichen <b>[1–6]</b>;
+      <li>Zeilen 23–29: Eine neue Zeile in <b>[template]</b>. <b>[class=’mt-3’] </b>steht für <b>[margin (m) top (t) égale à 3 spacers]</b>. <b>[spacer] </b>ist ein Abstandsmaß von Bootstrap. Diese Klasse erzeugt den Abstand <b>[8] </b>im obigen Screenshot. Ohne diese Klasse liegt der Bereich <b>[7] </b>direkt an den Bereich <b>[1-6]</b> an;
       </li>
-      <li>Zeile 24: eine Spalte, die sich über 4 Bootstrap-Spalten erstreckt;
+      <li>Zeile 24: eine Spalte, die 4 Bootstrap-Spalten einnimmt;
       </li>
-      <li>Zeilen 25–27: eine <b>[warning]</b>-Meldung, die den Wert des statischen Attributs<b> [children] </b>(Zeile 42) anzeigt. Da dieses Attribut eine bidirektionale Bindung mit dem Eingabefeld hat, ändert sich der in der Meldung angezeigte Wert, sobald der Benutzer es ändert;
+      <li>Zeilen 25–27: eine Warnmeldung <b>[warning], </b>die den Wert des statischen Attributs <b>[enfants] </b>(Zeile 42) anzeigt. Da dieses Attribut eine bidirektionale Verknüpfung mit dem Eingabefeld hat, ändert sich der in der Meldung angezeigte Wert, sobald der Benutzer das Eingabefeld ändert;
       </li>
-      <li>Zeilen 34–65: der JavaScript-Code der Komponente;
+      <li>Zeilen 34–65: der Code jS der Komponente;
       </li>
       <li>Zeile 42: das einzige statische Attribut der Komponente;
       </li>
       <li>Zeilen 47–56: die berechneten Attribute der Komponente;
       </li>
-      <li>Zeilen 53–55: Die Eingabe gilt als gültig, wenn es sich um eine positive ganze Zahl handelt, der optional Leerzeichen vorangestellt oder nachgestellt werden können;
+      <li>Zeilen 53–55: Die Eingabe gilt als gültig, wenn es sich um eine positive ganze Zahl handelt, der gegebenenfalls „Leerzeichen“ vorangestellt oder nachgestellt sind;
       </li>
-      <li>Zeilen 49–51: Das Formular gilt als gültig, wenn die Anzahl der eingegebenen Kinder gültig ist. Im Allgemeinen verfügt ein Formular über mehrere Felder und gilt als gültig, wenn alle Felder gültig sind;
+      <li>Zeilen 49–51: Das Formular gilt als gültig, wenn die Eingabe der Anzahl der Kinder gültig ist. Im Allgemeinen enthält ein Formular mehrere Eingabefelder und gilt als gültig, wenn alle Eingaben gültig sind;
       </li>
-      <li>Zeilen 58–63: Die Methoden der Komponente, die auf ihre Ereignisse reagieren. Hier gibt es nur ein Ereignis: den <b>[Klick] </b>auf die Schaltfläche. Wir zeigen einfach den eingegebenen Wert an, um zu verdeutlichen, dass wir darauf zugreifen können;
+      <li>Zeilen 58–63: Die Methoden der Komponente, die auf deren Ereignisse reagieren. Hier gibt es nur ein Ereignis: das <b>[click] </b>auf der Schaltfläche. Wir beschränken uns darauf, den eingegebenen Wert anzuzeigen, um zu zeigen, dass wir tatsächlich Zugriff darauf haben;
       </li>
     </ul>
   </li>
 </ul>
-<p><a id="refheadingtoc2479812728496130"></a></p>
-<h2 id="64-ausfuhren-des-projekts">6.4. <span style="color: #4f81bd">Ausführen des Projekts</span></h2>
-<p>Wir ändern die Datei <strong>[package.json]</strong> und führen das Projekt aus:</p>
+
+<p><span id="refheadingtoc2479812728496130" name="refheadingtoc2479812728496130" class="odt-bookmark-anchor"></span></p>
+<h2 id="64-ausfuhrung-des-projekts">6.4. <span style="color: #4f81bd">Ausführung des Projekts</span></h2>
+<p>Wir ändern die Datei <strong>„[package.json]“</strong> und führen das Projekt aus:</p>
 <p><img src="images/100000000000071700000277ADBDFF0B.png" width="545" height="189" style="width:14.409cm;height:5.009cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000071700000277ADBDFF0B.png" /></p>
 
 
